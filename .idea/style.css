@@ -1,0 +1,32 @@
+:root {
+    --primary: #330ade;
+    --secondary: #180abc;
+}
+
+body {
+    background-color: var(--primary);
+    width: 100%;
+    margin: 0;
+}
+
+#logo {
+    display: inline-block;
+    max-width: 100%;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--secondary);
+    width: 100%;
+}
+
+.link {
+    color: #13c7d5;
+}
