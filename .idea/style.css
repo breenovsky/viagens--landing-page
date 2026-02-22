@@ -1,9 +1,10 @@
 :root {
-    --primary: #330ade;
+    --primary: #8b81c6;
     --secondary: #67ba6b;
     --white: #fff;
     --black: #000;
     --gray: #aaa;
+    --text--highlight: #2f1dea;
 }
 
 body {
@@ -15,10 +16,13 @@ body {
 
 main {
     background-color: var(--white);
+    margin: 0;
 }
 
 #logo {
     display: inline-block;
+    width: 3em;
+    height: 3em;
     padding: 0px 10px;
     color: #000000;
 }
@@ -34,6 +38,8 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
     background-color: var(--secondary);
     width: 100%;
     background-attachment: fixed;
@@ -49,9 +55,9 @@ header {
 }
 
 .nav-item {
-    color: #2f1dea;
-    padding: 10px 4px;
-    margin: 0 10px;
+    color: var(--text--highlight);
+    padding: 10px 13px;
+    margin: 0 5px;
     list-style: none inside none;
     background-color: #86cd89aa;
     border-color: #000000;
@@ -59,16 +65,24 @@ header {
     border-style: solid;
  }
 
-.banner {
+.nav-item:hover {
+    background-color: #addab0;
+}
+
+#banner {
     display: flex;
     height: 390px;
-    background-image:linear-gradient(29deg,rgba(255, 255, 255, 0) 4%, rgba(199, 178, 87, 0.29) 38%, rgba(222, 135, 64, 0.29) 84%), url(./imgs/bv-banner.jpg);
+    background-image:linear-gradient(29deg, #00000020, #C7B25778, #DE874086), url(./imgs/bv-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
 }
 
 #titulo-principal {
-    align-self: center;
-    justify-self: center;
+    font-size: 53px;
+    color: var(--white);
+    text-shadow: 2px 2px 7px #63b365;
 }
