@@ -1,32 +1,74 @@
 :root {
     --primary: #330ade;
-    --secondary: #180abc;
+    --secondary: #67ba6b;
+    --white: #fff;
+    --black: #000;
+    --gray: #aaa;
 }
 
 body {
     background-color: var(--primary);
     width: 100%;
     margin: 0;
+    font-family: sans-serif;
+}
+
+main {
+    background-color: var(--white);
 }
 
 #logo {
     display: inline-block;
-    max-width: 100%;
+    padding: 0px 10px;
     color: #000000;
 }
 
 .container {
-    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--secondary);
     width: 100%;
+    background-attachment: fixed;
 }
 
-.link {
-    color: #13c7d5;
+.nav-links {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.nav-item {
+    color: #2f1dea;
+    padding: 10px 4px;
+    margin: 0 10px;
+    list-style: none inside none;
+    background-color: #86cd89aa;
+    border-color: #000000;
+    border-width: 0 1px;
+    border-style: solid;
+ }
+
+.banner {
+    display: flex;
+    height: 390px;
+    background-image:linear-gradient(29deg,rgba(255, 255, 255, 0) 4%, rgba(199, 178, 87, 0.29) 38%, rgba(222, 135, 64, 0.29) 84%), url(./imgs/bv-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#titulo-principal {
+    align-self: center;
+    justify-self: center;
 }
