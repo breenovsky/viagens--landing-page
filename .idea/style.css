@@ -115,7 +115,7 @@ header {
 .corpo-secao {
     display: flex;
     flex-flow: column wrap;
-    width: 800px;
+    width: 90%;
     align-content: center;
     text-align: justify;
     margin: 10px;
@@ -124,5 +124,26 @@ header {
 #rodape {
     background-color: var(--secondary);
     display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
     height: 200px;
+    padding: 0 70px;
+}
+
+.card-rodape {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: justify;
+    width: 20%;
+    font-size: 12px;
+}
+
+.card-rodape ul {
+    list-style: none inside none;
+    padding-left: 0px;
+}
+
+.card-rodape a {
+    color: var(--text--highlight);
 }
