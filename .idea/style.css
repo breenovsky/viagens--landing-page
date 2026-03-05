@@ -6,11 +6,11 @@
     --gray: #aaa;
     --text--highlight: #2f1dea;
     --text--title: "JetBrains Mono Extrabold", monospace;
-    --text--default: "JetBrains Mono Extrabold", monospace;
+    --text--default: "JetBrains Mono", monospace;
 }
 
 body {
-    background: url(./imgs/backsite.jpg);
+    background: linear-gradient(157deg, rgba(175, 242, 75, 0) 14%, rgba(132, 227, 184, 0.29) 52%, rgba(43, 214, 129, 0.29) 84%), url(./imgs/backsite.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,18 +102,27 @@ header {
     color: var(--text--highlight);
     background-color: var(--secondary);
     padding: 0px 15px;
-    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .corpo-principal {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
 .corpo-secao {
     display: flex;
     flex-flow: column wrap;
-    width: 100%;
+    width: 800px;
     align-content: center;
+    text-align: justify;
     margin: 10px;
+}
+
+#rodape {
+    background-color: var(--secondary);
+    display: flex;
+    height: 200px;
 }
