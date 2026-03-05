@@ -5,17 +5,24 @@
     --black: #000;
     --gray: #aaa;
     --text--highlight: #2f1dea;
+    --text--title: "JetBrains Mono Extrabold", monospace;
+    --text--default: "JetBrains Mono Extrabold", monospace;
 }
 
 body {
-    background-color: var(--primary);
+    background: url(./imgs/backsite.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     margin: 0;
-    font-family: sans-serif;
+    font-family: var(--text--default);
 }
 
 main {
     background-color: var(--white);
+    height: 100%;
     margin: 0;
 }
 
@@ -72,7 +79,7 @@ header {
 #banner {
     display: flex;
     height: 390px;
-    background-image:linear-gradient(29deg, #00000020, #C7B25778, #DE874086), url(./imgs/bv-banner.jpg);
+    background-image: linear-gradient(29deg, #00000020, #C7B25778, #DE874086), url(./imgs/bv-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +89,31 @@ header {
 }
 
 #titulo-principal {
+    font-family: var(--text--title);
     font-size: 53px;
     color: var(--white);
     text-shadow: 2px 2px 7px #63b365;
+    margin: 0;
+}
+
+.titulo-secao {
+    display: flex;
+    font-family: var(--text--title);
+    color: var(--text--highlight);
+    background-color: var(--secondary);
+    padding: 0px 15px;
+    align-content: center;
+}
+
+.corpo-principal {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.corpo-secao {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-content: center;
+    margin: 10px;
 }
